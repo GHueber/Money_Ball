@@ -4,7 +4,7 @@ library(ggeasy)
 library(ggpubr)
 library(dplyr)
 
-league <- read.csv("all_pitchers.csv")
+league <- read.csv("C:\\Users\\Gus\\OneDrive\\Desktop\\all_pitchers.csv")
 league
 colnames(league)
 
@@ -15,9 +15,9 @@ playerfilter1 <- ngames %>%
   select(player_name)
 playerfilter2 <- as.data.frame(playerfilter1)
 playerfilter2
-dl
-dl <- league %>% filter(player_name %in% playerfilter2)
 
+dl <- league %>% filter(player_name %in% playerfilter2)
+dl
 league$type
 ## Slider
 
